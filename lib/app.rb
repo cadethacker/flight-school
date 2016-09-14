@@ -17,7 +17,7 @@ class FlightSchool < Sinatra::Base
       erb :no_airport
     end
   end
-  cade was here
+
   get "/api/airports/:code" do
     begin
       airport_status = Radar.status_for(params[:code])
